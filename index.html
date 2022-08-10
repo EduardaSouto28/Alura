@@ -9,11 +9,32 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap">
-    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/js/script.js" defer></script>
 </head>
 
 <body>
-    main.container>h1
+
+    <header class="cabecalho">
+        <button class="cabecalho__menu"><i></i></button>
+        <img src="assets/img/logo.svg" alt="Logotipo da HZC" class="cabecalho__logo">
+        <button class="cabecalho__notificacao"><i></i></button>
+    </header>
+
+    <nav class="menu-lateral">
+
+        <img src="assets/img/logo.svg" alt="Logotipo da HZC" class="menu-lateral__logo">
+
+        <a href="#" class="menu-lateral__link menu-lateral__link--inicio"  onclick="opcaoSelecionada(this)">Início</a>
+        <a href="#" class="menu-lateral__link menu-lateral__link--videos"  onclick="opcaoSelecionada(this)">Vídeos</a>
+        <a href="#" class="menu-lateral__link menu-lateral__link--picos"  onclick="opcaoSelecionada(this)">Picos</a>
+        <a href="#" class="menu-lateral__link menu-lateral__link--integrantes"  onclick="opcaoSelecionada(this)">Integrantes</a>
+        <a href="#" class="menu-lateral__link menu-lateral__link--camisas"  onclick="opcaoSelecionada(this)">Camisas</a>
+        <a href="#" class="menu-lateral__link menu-lateral__link--pinturas"  onclick="opcaoSelecionada(this)">Pinturas</a>
+
+    </nav>
+
 </body>
 
 </html>
