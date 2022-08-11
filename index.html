@@ -17,7 +17,7 @@
 <body>
 
     <header class="cabecalho">
-        <button class="cabecalho__menu"><i></i></button>
+        <button class="cabecalho__menu" onclick="ativarMenu()"><i></i></button>
         <img src="assets/img/logo.svg" alt="Logotipo da HZC" class="cabecalho__logo">
         <button class="cabecalho__notificacao"><i></i></button>
     </header>
@@ -26,14 +26,53 @@
 
         <img src="assets/img/logo.svg" alt="Logotipo da HZC" class="menu-lateral__logo">
 
-        <a href="#" class="menu-lateral__link menu-lateral__link--inicio"  onclick="opcaoSelecionada(this)">Início</a>
-        <a href="#" class="menu-lateral__link menu-lateral__link--videos"  onclick="opcaoSelecionada(this)">Vídeos</a>
-        <a href="#" class="menu-lateral__link menu-lateral__link--picos"  onclick="opcaoSelecionada(this)">Picos</a>
-        <a href="#" class="menu-lateral__link menu-lateral__link--integrantes"  onclick="opcaoSelecionada(this)">Integrantes</a>
-        <a href="#" class="menu-lateral__link menu-lateral__link--camisas"  onclick="opcaoSelecionada(this)">Camisas</a>
-        <a href="#" class="menu-lateral__link menu-lateral__link--pinturas"  onclick="opcaoSelecionada(this)">Pinturas</a>
+        <a href="#" class="menu-lateral__link menu-lateral__link--inicio" onclick="opcaoSelecionada(this)">Início</a>
+        <a href="#" class="menu-lateral__link menu-lateral__link--videos" onclick="opcaoSelecionada(this)">Vídeos</a>
+        <a href="#" class="menu-lateral__link menu-lateral__link--picos" onclick="opcaoSelecionada(this)">Picos</a>
+        <a href="#" class="menu-lateral__link menu-lateral__link--integrantes"
+            onclick="opcaoSelecionada(this)">Integrantes</a>
+        <a href="#" class="menu-lateral__link menu-lateral__link--camisas" onclick="opcaoSelecionada(this)">Camisas</a>
+        <a href="#" class="menu-lateral__link menu-lateral__link--pinturas"
+            onclick="opcaoSelecionada(this)">Pinturas</a>
 
     </nav>
+
+    <main class="principal">
+
+        <h2 class="titulo-pagina">Início</h2>
+
+        <article class="cartao cartao--destaque">
+
+            <img src="assets/img/banner-mobile_1.png" alt="banner do cartao" class="cartao__imagem">
+
+            <div class="cartao__conteudo">
+                <p class="cartao__destaque">Vídeo em destaque</p>
+                <h3 class="cartao__titulo">HCZ - Título</h3>
+                <p class="cartao__perfil">Bruno Lopes</p>
+                <p class="cartao__info cartao__info--tempo">33 minutos</p>
+                <p class="cartao__info cartao__info--visualizacao">33 visualizações</p>
+                <button class="cartao__botao cartao__botao--destaque cartao__botao--play">Assistir agora</button>
+            </div>
+
+        </article>
+
+        <section class="secao">
+            <h3 class="titulo-secao">Vídeos mais vistos</h3>
+            <article class="cartao cartao--destaque">
+
+                <img src="assets/img/video_1.png" alt="video" class="cartao__imagem">
+
+                <div class="cartao__conteudo">
+                    <p class="cartao__perfil">Bruno Lopes</p>
+                    <h3 class="cartao__titulo">HCZ - Título</h3>
+                    <p class="cartao__info cartao__info--tempo">33 minutos</p>
+                    <button class="cartao__botao cartao__botao--play" aria-label="Assistir agora"></button>
+                </div>
+
+            </article>
+        </section>
+
+    </main>
 
 </body>
 
