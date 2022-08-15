@@ -27,9 +27,11 @@
 
         <img src="assets/img/logo.svg" alt="Logotipo da HZC" class="menu-lateral__logo">
 
-        <a href="#" class="menu-lateral__link menu-lateral__link--inicio" onclick="opcaoSelecionada(this)">Início</a>
+        <a href="#" class="menu-lateral__link menu-lateral__link--inicio"
+            onclick="opcaoSelecionada(this), abaInicio()">Início</a>
         <a href="#" class="menu-lateral__link menu-lateral__link--videos" onclick="opcaoSelecionada(this)">Vídeos</a>
-        <a href="#" class="menu-lateral__link menu-lateral__link--picos" onclick="opcaoSelecionada(this)">Picos</a>
+        <a href="#" class="menu-lateral__link menu-lateral__link--picos"
+            onclick="opcaoSelecionada(this), abaPicos()">Picos</a>
         <a href="#" class="menu-lateral__link menu-lateral__link--integrantes"
             onclick="opcaoSelecionada(this)">Integrantes</a>
         <a href="#" class="menu-lateral__link menu-lateral__link--camisas" onclick="opcaoSelecionada(this)">Camisas</a>
@@ -38,250 +40,371 @@
 
     </nav>
 
-    <main class="principal">
+    <div class="inicio">
+        <main class="principal ">
 
-        <h2 class="titulo-pagina">Início</h2>
+            <h2 class="titulo-pagina">Início</h2>
 
-        <article class="cartao cartao--destaque destaque-video">
+            <article class="cartao cartao--destaque destaque-video">
 
-            <img src="assets/img/banner-mobile_1.png" alt="banner do cartao" class="cartao__imagem--mobile">
-            <img src="assets/img/banner_1.png" alt="banner do cartao" class="cartao__imagem--desktop">
+                <img src="assets/img/banner-mobile_1.png" alt="banner do cartao" class="cartao__imagem--mobile">
+                <img src="assets/img/banner_1.png" alt="banner do cartao" class="cartao__imagem--desktop">
 
-
-            <div class="cartao__conteudo">
-                <p class="cartao__destaque">Vídeo em destaque</p>
-                <h3 class="cartao__titulo">HZC - Life is... / 2021</h3>
-                <p class="cartao__perfil">Bruno Lopes</p>
-                <p class="cartao__info cartao__info--tempo">33 minutos</p>
-                <p class="cartao__info cartao__info--visualizacao">33 visualizações</p>
-                <button class="cartao__botao cartao__botao--destaque cartao__botao--play">Assistir agora</button>
-            </div>
-
-        </article>
-
-        <article class="cartao cartao--recentes videos-recentes">
-
-            <h3 class="cartao__titulo">Vídeos recentes</h3>
-
-            <a href="#" class="cartao__link">Ver todos</a>
-
-            <ul class="cartao__lista">
-                <li class="cartao__item">
-                    <img src="assets/img/miniatura_1.png" alt="Thumbnail" class="cartao__intem-thumbnail">
-                    <h4 class="cartao__item-titulo">HZC - Love machine</h4>
-                    <p class="cartao__item-perfil">Júlia Fonseca</p>
-                </li>
-
-                <li class="cartao__item">
-                    <img src="assets/img/miniatura_1.png" alt="Thumbnail" class="cartao__intem-thumbnail">
-                    <h4 class="cartao__item-titulo">HZC - Love machine</h4>
-                    <p class="cartao__item-perfil">Júlia Fonseca</p>
-                </li>
-
-                <li class="cartao__item">
-                    <img src="assets/img/miniatura_1.png" alt="Thumbnail" class="cartao__intem-thumbnail">
-                    <h4 class="cartao__item-titulo">HZC - Love machine</h4>
-                    <p class="cartao__item-perfil">Júlia Fonseca</p>
-                </li>
-
-                <li class="cartao__item">
-                    <img src="assets/img/miniatura_1.png" alt="Thumbnail" class="cartao__intem-thumbnail">
-                    <h4 class="cartao__item-titulo">HZC - Love machine</h4>
-                    <p class="cartao__item-perfil">Júlia Fonseca</p>
-                </li>
-
-                <li class="cartao__item">
-                    <img src="assets/img/miniatura_1.png" alt="Thumbnail" class="cartao__intem-thumbnail">
-                    <h4 class="cartao__item-titulo">HZC - Love machine</h4>
-                    <p class="cartao__item-perfil">Júlia Fonseca</p>
-                </li>
-            </ul>
-
-        </article>
-
-        <section class="secao mais-vistos">
-            <h3 class="titulo-secao ">Vídeos mais vistos</h3>
-            <article class="cartao cartao--destaque">
-
-                <img src="assets/img/video_1.png" alt="video" class="cartao__imagem">
 
                 <div class="cartao__conteudo">
-                    <p class="cartao__perfil">André Soares</p>
-                    <h3 class="cartao__titulo">HZC - Tudo sem Padrin</h3>
-                    <p class="cartao__info cartao__info--tempo">33 minutos</p>
-                    <button class="cartao__botao cartao__botao--play" aria-label="Assistir agora"></button>
-                </div>
-
-            </article>
-
-            <article class="cartao cartao--destaque">
-
-                <img src="assets/img/video_2.png" alt="video" class="cartao__imagem">
-
-                <div class="cartao__conteudo">
+                    <p class="cartao__destaque">Vídeo em destaque</p>
+                    <h3 class="cartao__titulo">HZC - Life is... / 2021</h3>
                     <p class="cartao__perfil">Bruno Lopes</p>
-                    <h3 class="cartao__titulo">HZC - Enter The Hu-flez</h3>
                     <p class="cartao__info cartao__info--tempo">33 minutos</p>
-                    <button class="cartao__botao cartao__botao--play" aria-label="Assistir agora"></button>
+                    <p class="cartao__info cartao__info--visualizacao">33 visualizações</p>
+                    <button class="cartao__botao cartao__botao--destaque cartao__botao--play">Assistir agora</button>
                 </div>
 
             </article>
 
-            <article class="cartao cartao--destaque">
+            <article class="cartao cartao--recentes videos-recentes">
 
-                <img src="assets/img/video_3.png" alt="video" class="cartao__imagem">
+                <h3 class="cartao__titulo">Vídeos recentes</h3>
 
-                <div class="cartao__conteudo">
-                    <p class="cartao__perfil">Luiza Sampaio</p>
-                    <h3 class="cartao__titulo">HZC - Vol.3</h3>
-                    <p class="cartao__info cartao__info--tempo">33 minutos</p>
-                    <button class="cartao__botao cartao__botao--play" aria-label="Assistir agora"></button>
-                </div>
+                <a href="#" class="cartao__link">Ver todos</a>
+
+                <ul class="cartao__lista">
+                    <li class="cartao__item">
+                        <img src="assets/img/miniatura_1.png" alt="Thumbnail" class="cartao__intem-thumbnail">
+                        <h4 class="cartao__item-titulo">HZC - Love machine</h4>
+                        <p class="cartao__item-perfil">Júlia Fonseca</p>
+                    </li>
+
+                    <li class="cartao__item">
+                        <img src="assets/img/miniatura_1.png" alt="Thumbnail" class="cartao__intem-thumbnail">
+                        <h4 class="cartao__item-titulo">HZC - Love machine</h4>
+                        <p class="cartao__item-perfil">Júlia Fonseca</p>
+                    </li>
+
+                    <li class="cartao__item">
+                        <img src="assets/img/miniatura_1.png" alt="Thumbnail" class="cartao__intem-thumbnail">
+                        <h4 class="cartao__item-titulo">HZC - Love machine</h4>
+                        <p class="cartao__item-perfil">Júlia Fonseca</p>
+                    </li>
+
+                    <li class="cartao__item">
+                        <img src="assets/img/miniatura_1.png" alt="Thumbnail" class="cartao__intem-thumbnail">
+                        <h4 class="cartao__item-titulo">HZC - Love machine</h4>
+                        <p class="cartao__item-perfil">Júlia Fonseca</p>
+                    </li>
+
+                    <li class="cartao__item">
+                        <img src="assets/img/miniatura_1.png" alt="Thumbnail" class="cartao__intem-thumbnail">
+                        <h4 class="cartao__item-titulo">HZC - Love machine</h4>
+                        <p class="cartao__item-perfil">Júlia Fonseca</p>
+                    </li>
+                </ul>
 
             </article>
 
-            <article class="cartao cartao--destaque">
+            <section class="secao mais-vistos">
+                <h3 class="titulo-secao ">Vídeos mais vistos</h3>
+                <article class="cartao cartao--destaque">
 
-                <img src="assets/img/video_4.png" alt="video" class="cartao__imagem">
+                    <img src="assets/img/video_1.png" alt="video" class="cartao__imagem">
+
+                    <div class="cartao__conteudo">
+                        <p class="cartao__perfil">André Soares</p>
+                        <h3 class="cartao__titulo">HZC - Tudo sem Padrin</h3>
+                        <p class="cartao__info cartao__info--tempo">33 minutos</p>
+                        <button class="cartao__botao cartao__botao--play" aria-label="Assistir agora"></button>
+                    </div>
+
+                </article>
+
+                <article class="cartao cartao--destaque">
+
+                    <img src="assets/img/video_2.png" alt="video" class="cartao__imagem">
+
+                    <div class="cartao__conteudo">
+                        <p class="cartao__perfil">Bruno Lopes</p>
+                        <h3 class="cartao__titulo">HZC - Enter The Hu-flez</h3>
+                        <p class="cartao__info cartao__info--tempo">33 minutos</p>
+                        <button class="cartao__botao cartao__botao--play" aria-label="Assistir agora"></button>
+                    </div>
+
+                </article>
+
+                <article class="cartao cartao--destaque">
+
+                    <img src="assets/img/video_3.png" alt="video" class="cartao__imagem">
+
+                    <div class="cartao__conteudo">
+                        <p class="cartao__perfil">Luiza Sampaio</p>
+                        <h3 class="cartao__titulo">HZC - Vol.3</h3>
+                        <p class="cartao__info cartao__info--tempo">33 minutos</p>
+                        <button class="cartao__botao cartao__botao--play" aria-label="Assistir agora"></button>
+                    </div>
+
+                </article>
+
+                <article class="cartao cartao--destaque">
+
+                    <img src="assets/img/video_4.png" alt="video" class="cartao__imagem">
+
+                    <div class="cartao__conteudo">
+                        <p class="cartao__perfil">Bruno Lopes</p>
+                        <h3 class="cartao__titulo">HZC - Love Machine</h3>
+                        <p class="cartao__info cartao__info--tempo">33 minutos</p>
+                        <button class="cartao__botao cartao__botao--play" aria-label="Assistir agora"></button>
+                    </div>
+
+                </article>
+            </section>
+
+            <article class="cartao cartao--recentes artes-recentes">
+
+                <h3 class="cartao__titulo">Novas artes</h3>
+
+                <a href="#" class="cartao__link">Ver todas</a>
+
+                <ul class="cartao__lista">
+                    <li class="cartao__item">
+                        <img src="assets/img/miniatura_4.png" class="cartao__intem-thumbnail">
+                        <h4 class="cartao__item-titulo">Sem título 01</h4>
+                        <p class="cartao__item-perfil">Antonio Tebyriçá</p>
+                    </li>
+
+                    <li class="cartao__item">
+                        <img src="assets/img/miniatura_2.png" alt="Thumbnail" class="cartao__intem-thumbnail">
+                        <h4 class="cartao__item-titulo">Sem título 02</h4>
+                        <p class="cartao__item-perfil">Antonio Tebyriçá</p>
+                    </li>
+
+                    <li class="cartao__item">
+                        <img src="assets/img/miniatura_1.png" alt="Thumbnail" class="cartao__intem-thumbnail">
+                        <h4 class="cartao__item-titulo">Segurança</h4>
+                        <p class="cartao__item-perfil">Raphael Gibson</p>
+                    </li>
+
+                    <li class="cartao__item">
+                        <img src="assets/img/miniatura_1.png" alt="Thumbnail" class="cartao__intem-thumbnail">
+                        <h4 class="cartao__item-titulo">Malunguisse</h4>
+                        <p class="cartao__item-perfil">Carolina Canavarro</p>
+                    </li>
+
+                    <li class="cartao__item">
+                        <img src="assets/img/miniatura_1.png" alt="Thumbnail" class="cartao__intem-thumbnail">
+                        <h4 class="cartao__item-titulo">Coroa da converse</h4>
+                        <p class="cartao__item-perfil">Nikolas de Murtas</p>
+                    </li>
+
+
+                    <li class="cartao__item">
+                        <img src="assets/img/miniatura_1.png" alt="Thumbnail" class="cartao__intem-thumbnail">
+                        <h4 class="cartao__item-titulo">Segurança</h4>
+                        <p class="cartao__item-perfil">Raphael Gibson</p>
+                    </li>
+
+
+                    <li class="cartao__item">
+                        <img src="assets/img/miniatura_1.png" alt="Thumbnail" class="cartao__intem-thumbnail">
+                        <h4 class="cartao__item-titulo">Sem título 03</h4>
+                        <p class="cartao__item-perfil">Antonio Tebyriçá</p>
+                    </li>
+                </ul>
+
+            </article>
+
+            <article class="cartao cartao--destaque destaque-arte">
+
+                <img src="assets/img/banner-mobile_2.png" alt="banner do cartao" class="cartao__imagem--mobile">
+                <img src="assets/img/banner_2.png" alt="banner do cartao" class="cartao__imagem--desktop">
+
 
                 <div class="cartao__conteudo">
+                    <p class="cartao__destaque">Nova arte</p>
+                    <h3 class="cartao__titulo">Only Zikas - Lagos Dompa Club</h3>
                     <p class="cartao__perfil">Bruno Lopes</p>
-                    <h3 class="cartao__titulo">HZC - Love Machine</h3>
-                    <p class="cartao__info cartao__info--tempo">33 minutos</p>
-                    <button class="cartao__botao cartao__botao--play" aria-label="Assistir agora"></button>
-                </div>
-
-            </article>
-        </section>
-
-        <article class="cartao cartao--recentes artes-recentes">
-
-            <h3 class="cartao__titulo">Novas artes</h3>
-
-            <a href="#" class="cartao__link">Ver todas</a>
-
-            <ul class="cartao__lista">
-                <li class="cartao__item">
-                    <img src="assets/img/miniatura_4.png" class="cartao__intem-thumbnail">
-                    <h4 class="cartao__item-titulo">Sem título 01</h4>
-                    <p class="cartao__item-perfil">Antonio Tebyriçá</p>
-                </li>
-
-                <li class="cartao__item">
-                    <img src="assets/img/miniatura_2.png" alt="Thumbnail" class="cartao__intem-thumbnail">
-                    <h4 class="cartao__item-titulo">Sem título 02</h4>
-                    <p class="cartao__item-perfil">Antonio Tebyriçá</p>
-                </li>
-
-                <li class="cartao__item">
-                    <img src="assets/img/miniatura_1.png" alt="Thumbnail" class="cartao__intem-thumbnail">
-                    <h4 class="cartao__item-titulo">Segurança</h4>
-                    <p class="cartao__item-perfil">Raphael Gibson</p>
-                </li>
-
-                <li class="cartao__item">
-                    <img src="assets/img/miniatura_1.png" alt="Thumbnail" class="cartao__intem-thumbnail">
-                    <h4 class="cartao__item-titulo">Malunguisse</h4>
-                    <p class="cartao__item-perfil">Carolina Canavarro</p>
-                </li>
-
-                <li class="cartao__item">
-                    <img src="assets/img/miniatura_1.png" alt="Thumbnail" class="cartao__intem-thumbnail">
-                    <h4 class="cartao__item-titulo">Coroa da converse</h4>
-                    <p class="cartao__item-perfil">Nikolas de Murtas</p>
-                </li>
-
-
-                <li class="cartao__item">
-                    <img src="assets/img/miniatura_1.png" alt="Thumbnail" class="cartao__intem-thumbnail">
-                    <h4 class="cartao__item-titulo">Segurança</h4>
-                    <p class="cartao__item-perfil">Raphael Gibson</p>
-                </li>
-
-
-                <li class="cartao__item">
-                    <img src="assets/img/miniatura_1.png" alt="Thumbnail" class="cartao__intem-thumbnail">
-                    <h4 class="cartao__item-titulo">Sem título 03</h4>
-                    <p class="cartao__item-perfil">Antonio Tebyriçá</p>
-                </li>
-            </ul>
-
-        </article>
-
-        <article class="cartao cartao--destaque destaque-arte">
-
-            <img src="assets/img/banner-mobile_2.png" alt="banner do cartao" class="cartao__imagem--mobile">
-            <img src="assets/img/banner_2.png" alt="banner do cartao" class="cartao__imagem--desktop">
-
-
-            <div class="cartao__conteudo">
-                <p class="cartao__destaque">Nova arte</p>
-                <h3 class="cartao__titulo">Only Zikas - Lagos Dompa Club</h3>
-                <p class="cartao__perfil">Bruno Lopes</p>
-                <p class="cartao__info cartao__info--valor">33,33</p>
-                <p class="cartao__info cartao__info--visualizacao">33 visualizações</p>
-                <button class="cartao__botao cartao__botao--destaque cartao__botao--compra">Comprar agora</button>
-            </div>
-
-        </article>
-
-
-        <section class="secao recentes-camisas">
-            <h3 class="titulo-secao">Camisas mais recentes</h3>
-            <article class="cartao cartao--destaque">
-
-                <img src="assets/img/produto_1.png" alt="produto" class="cartao__imagem">
-
-                <div class="cartao__conteudo">
-                    <p class="cartao__perfil">André Soares</p>
-                    <h3 class="cartao__titulo">IBM</h3>
                     <p class="cartao__info cartao__info--valor">33,33</p>
-                    <button class="cartao__botao cartao__botao--compra" aria-label="Assistir agora"></button>
+                    <p class="cartao__info cartao__info--visualizacao">33 visualizações</p>
+                    <button class="cartao__botao cartao__botao--destaque cartao__botao--compra">Comprar agora</button>
                 </div>
 
             </article>
 
-            <article class="cartao cartao--destaque">
 
-                <img src="assets/img/produto_2.png" alt="produto" class="cartao__imagem">
+            <section class="secao recentes-camisas">
+                <h3 class="titulo-secao">Camisas mais recentes</h3>
+                <article class="cartao cartao--destaque">
 
-                <div class="cartao__conteudo">
-                    <p class="cartao__perfil">Bruno Lopes</p>
-                    <h3 class="cartao__titulo">Huflez Crew Philosophy Club</h3>
-                    <p class="cartao__info cartao__info--valor">33,33</p>
-                    <button class="cartao__botao cartao__botao--compra" aria-label="Assistir agora"></button>
-                </div>
+                    <img src="assets/img/produto_1.png" alt="produto" class="cartao__imagem">
+
+                    <div class="cartao__conteudo">
+                        <p class="cartao__perfil">André Soares</p>
+                        <h3 class="cartao__titulo">IBM</h3>
+                        <p class="cartao__info cartao__info--valor">33,33</p>
+                        <button class="cartao__botao cartao__botao--compra" aria-label="Assistir agora"></button>
+                    </div>
+
+                </article>
+
+                <article class="cartao cartao--destaque">
+
+                    <img src="assets/img/produto_2.png" alt="produto" class="cartao__imagem">
+
+                    <div class="cartao__conteudo">
+                        <p class="cartao__perfil">Bruno Lopes</p>
+                        <h3 class="cartao__titulo">Huflez Crew Philosophy Club</h3>
+                        <p class="cartao__info cartao__info--valor">33,33</p>
+                        <button class="cartao__botao cartao__botao--compra" aria-label="Assistir agora"></button>
+                    </div>
+
+                </article>
+
+                <article class="cartao cartao--destaque">
+
+                    <img src="assets/img/produto_3.png" alt="produto" class="cartao__imagem">
+
+                    <div class="cartao__conteudo">
+                        <p class="cartao__perfil">Luiza Sampaio</p>
+                        <h3 class="cartao__titulo">Corujita noturna</h3>
+                        <p class="cartao__info cartao__info--valor">33,33</p>
+                        <button class="cartao__botao cartao__botao--compra" aria-label="Assistir agora"></button>
+                    </div>
+
+                </article>
+
+                <article class="cartao cartao--destaque">
+
+                    <img src="assets/img/produto_4.png" alt="produto" class="cartao__imagem">
+
+                    <div class="cartao__conteudo">
+                        <p class="cartao__perfil">Bruno Lopes</p>
+                        <h3 class="cartao__titulo">GGG - Gatin G Gorro</h3>
+                        <p class="cartao__info cartao__info--valor">33,33</p>
+                        <button class="cartao__botao cartao__botao--compra" aria-label="Assistir agora"></button>
+                    </div>
+
+                </article>
+            </section>
+
+        </main>
+    </div>
+
+    <div class="picos">
+        <main class="principal ">
+
+            <h2 class="titulo-pagina">Picos</h2>
+            <img src="assets/img/mapa-picos.png" alt="Mapa dos picos" class="mapa-picos">
+
+            <article class="cartao cartao--recentes favoritos">
+
+                <h3 class="cartao__titulo">Favoritos</h3>
+
+                <a href="#" class="cartao__link">Ver todas</a>
+
+                <ul class="cartao__lista">
+                    <li class="cartao__item">
+                        <img src="assets/img/miniatura_4.png" class="cartao__intem-thumbnail">
+                        <h4 class="cartao__item-titulo">Sem título 01</h4>
+                        <p class="cartao__item-perfil">Antonio Tebyriçá</p>
+                    </li>
+
+                    <li class="cartao__item">
+                        <img src="assets/img/miniatura_2.png" alt="Thumbnail" class="cartao__intem-thumbnail">
+                        <h4 class="cartao__item-titulo">Sem título 02</h4>
+                        <p class="cartao__item-perfil">Antonio Tebyriçá</p>
+                    </li>
+
+                    <li class="cartao__item">
+                        <img src="assets/img/miniatura_1.png" alt="Thumbnail" class="cartao__intem-thumbnail">
+                        <h4 class="cartao__item-titulo">Segurança</h4>
+                        <p class="cartao__item-perfil">Raphael Gibson</p>
+                    </li>
+
+                    <li class="cartao__item">
+                        <img src="assets/img/miniatura_1.png" alt="Thumbnail" class="cartao__intem-thumbnail">
+                        <h4 class="cartao__item-titulo">Malunguisse</h4>
+                        <p class="cartao__item-perfil">Carolina Canavarro</p>
+                    </li>
+
+                    <li class="cartao__item">
+                        <img src="assets/img/miniatura_1.png" alt="Thumbnail" class="cartao__intem-thumbnail">
+                        <h4 class="cartao__item-titulo">Coroa da converse</h4>
+                        <p class="cartao__item-perfil">Nikolas de Murtas</p>
+                    </li>
+
+
+                    <li class="cartao__item">
+                        <img src="assets/img/miniatura_1.png" alt="Thumbnail" class="cartao__intem-thumbnail">
+                        <h4 class="cartao__item-titulo">Segurança</h4>
+                        <p class="cartao__item-perfil">Raphael Gibson</p>
+                    </li>
+
+
+                    <li class="cartao__item">
+                        <img src="assets/img/miniatura_1.png" alt="Thumbnail" class="cartao__intem-thumbnail">
+                        <h4 class="cartao__item-titulo">Sem título 03</h4>
+                        <p class="cartao__item-perfil">Antonio Tebyriçá</p>
+                    </li>
+                </ul>
 
             </article>
 
-            <article class="cartao cartao--destaque">
+            <section class="secao mais-vistos">
+                <h3 class="titulo-secao ">Vídeos mais vistos</h3>
+                <article class="cartao cartao--destaque">
 
-                <img src="assets/img/produto_3.png" alt="produto" class="cartao__imagem">
+                    <img src="assets/img/artigo_1.png" alt="video" class="cartao__imagem">
 
-                <div class="cartao__conteudo">
-                    <p class="cartao__perfil">Luiza Sampaio</p>
-                    <h3 class="cartao__titulo">Corujita noturna</h3>
-                    <p class="cartao__info cartao__info--valor">33,33</p>
-                    <button class="cartao__botao cartao__botao--compra" aria-label="Assistir agora"></button>
-                </div>
+                    <div class="cartao__conteudo">
+                        <p class="cartao__perfil">André Soares</p>
+                        <h3 class="cartao__titulo">HZC - Tudo sem Padrin</h3>
+                        <p class="cartao__info cartao__info--visualizacao">33 visualizações</p>
+                        <button class="cartao__botao cartao__botao--localiza" aria-label="Assistir agora"></button>
+                    </div>
 
-            </article>
+                </article>
 
-            <article class="cartao cartao--destaque">
+                <article class="cartao cartao--destaque">
 
-                <img src="assets/img/produto_4.png" alt="produto" class="cartao__imagem">
+                    <img src="assets/img/artigo_1.png" alt="video" class="cartao__imagem">
 
-                <div class="cartao__conteudo">
-                    <p class="cartao__perfil">Bruno Lopes</p>
-                    <h3 class="cartao__titulo">GGG - Gatin G Gorro</h3>
-                    <p class="cartao__info cartao__info--valor">33,33</p>
-                    <button class="cartao__botao cartao__botao--compra" aria-label="Assistir agora"></button>
-                </div>
+                    <div class="cartao__conteudo">
+                        <p class="cartao__perfil">Bruno Lopes</p>
+                        <h3 class="cartao__titulo">HZC - Enter The Hu-flez</h3>
+                        <p class="cartao__info cartao__info--visualizacao">33 visualizações</p>
+                        <button class="cartao__botao cartao__botao--localiza" aria-label="Assistir agora"></button>
+                    </div>
 
-            </article>
-        </section>
+                </article>
 
-    </main>
+                <article class="cartao cartao--destaque">
+
+                    <img src="assets/img/artigo_1.png" alt="video" class="cartao__imagem">
+
+                    <div class="cartao__conteudo">
+                        <p class="cartao__perfil">Luiza Sampaio</p>
+                        <h3 class="cartao__titulo">HZC - Vol.3</h3>
+                        <p class="cartao__info cartao__info--visualizacao">33 visualizações</p>
+                        <button class="cartao__botao cartao__botao--localiza" aria-label="Assistir agora"></button>
+                    </div>
+
+                </article>
+
+                <article class="cartao cartao--destaque">
+
+                    <img src="assets/img/artigo_1.png" alt="video" class="cartao__imagem">
+
+                    <div class="cartao__conteudo">
+                        <p class="cartao__perfil">Bruno Lopes</p>
+                        <h3 class="cartao__titulo">HZC - Love Machine</h3>
+                        <p class="cartao__info cartao__info--visualizacao">33 visualizações</p>
+                        <button class="cartao__botao cartao__botao--localiza" aria-label="Assistir agora"></button>
+                    </div>
+
+                </article>
+            </section>
+
+
+        </main>
+    </div>
 
 </body>
 

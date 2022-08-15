@@ -113,12 +113,12 @@ body {
 
     position: absolute;
     left: -100vw;
-    transition: 0.25s;
+    transition: 0.50s;
 
 }
 
 .menu-lateral--ativo {
-    transition: 0.25s;
+    transition: 0.50s;
     left: 0;
 }
 
@@ -141,7 +141,7 @@ body {
     color: #FFFFFF;
     padding-left: 56px;
     border-left: 8px solid #FFFFFF;
-    transition: 0.25s;
+    transition: 0.75s;
 }
 
 .menu-lateral__link::before {
@@ -339,7 +339,7 @@ body {
         align-items: center;
         row-gap: 24px;
         width: 256px;
-        padding: 18px;
+        padding: 30px 18px;
         box-sizing: border-box;
         align-self: flex-start;
     }
@@ -450,6 +450,24 @@ body {
     .recentes-camisas {
         grid-area: recentes-camisa;
     }
+    .mapa-picos{
+        grid-area: destaque-video;
+    }
+    .favoritos{
+        grid-area: videos-recentes;
+    }
 
 
+}
+
+
+
+.mapa-picos {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.cartao__botao--localiza::before {
+    content: "\e908";
+    font-size: 24px;
 }
