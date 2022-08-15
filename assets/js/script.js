@@ -25,14 +25,12 @@ let picos = document.querySelector(".picos");
 function abaPicos() {
     inicio.style.display = "none"
     picos.style.display = "block"
-    ativarMenu()
 
 }
 
 function abaInicio() {
     inicio.style.display = "block"
     picos.style.display = "none"
-    ativarMenu()
 
 }
 abaInicio();
