@@ -7,14 +7,12 @@ function opcaoSelecionada(opcao) {
         todasOpcoes[i].classList.remove("menu-lateral__link--ativo");
     }
     opcao.classList.toggle("menu-lateral__link--ativo");
-
-
 }
 
 function ativarMenu() {
 
-    document.querySelector('.menu-lateral').classList.toggle("menu-lateral--ativo");
-
+   document.querySelector('.menu-lateral').classList.toggle("menu-lateral--ativo");
+   
 }
 
 
@@ -25,12 +23,13 @@ let picos = document.querySelector(".picos");
 function abaPicos() {
     inicio.style.display = "none"
     picos.style.display = "block"
+    ativarMenu()
 
 }
 
 function abaInicio() {
     inicio.style.display = "block"
     picos.style.display = "none"
+    ativarMenu()
 
 }
-abaInicio();

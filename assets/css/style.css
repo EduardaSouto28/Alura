@@ -461,7 +461,9 @@ body {
 }
 
 
-
+.picos{
+    display: none;
+}
 .mapa-picos {
     width: 100%;
     margin-bottom: 20px;
