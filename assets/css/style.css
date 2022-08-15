@@ -25,7 +25,7 @@ body {
     /*Organizar os elementos verticalmente dentro dos containers*/
     align-items: center;
     /*organizar os elementos horizontalemnete dentro dos containers*/
-    background-color: #1D232A;
+    background-color: #15191C;
     padding: 8px 16px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.16);
 }
@@ -145,6 +145,7 @@ body {
 }
 
 .menu-lateral__link::before {
+    content: "\e900";
     width: 24px;
     height: 24px;
     font-size: 24px;
@@ -176,7 +177,7 @@ body {
     content: '\e90a';
 }
 
-@media screen and (min-width: 144px) {
+@media screen and (min-width: 1440px) {
     .menu-lateral {
         position: static;
         width: 200px;
@@ -195,24 +196,23 @@ body {
 
 .titulo-pagina {
     font-size: 1.5rem;
-    font-weight: bold;
+    font-weight: 700;
 }
 
-@media screen and (min-width: 144px) {
+@media screen and (min-width: 1440px) {
     .principal {
         display: grid;
         grid-template-columns: auto 1fr auto;
         column-gap: 32px;
+        row-gap: 32px;
         padding: 16px 60px;
         grid-column: 2;
         grid-template-areas:
             "titulo titulo titulo"
-            "destaque-video destaque-video recentes-videos"
-            "titulo-video titulo-video titulo-video"
+            "destaque-video destaque-video videos-recentes"
             "mais-vistos mais-vistos mais-vistos"
-            "recentes-arte destaque-arte destaque-arte"
+            "artes-recentes destaque-arte destaque-arte"
             "recentes-camisa recentes-camisa recentes-camisa";
-
     }
 }
 
@@ -229,6 +229,14 @@ body {
 
 .cartao--destaque {
     margin-bottom: 16px;
+}
+
+.cartao__imagem--desktop {
+    display: none;
+}
+
+.cartao__imagem--mobile {
+    display: block;
 }
 
 .cartao__conteudo {
@@ -307,15 +315,33 @@ body {
     display: none;
 }
 
-@media screen and (min-width: 144px) {
+@media screen and (min-width: 1440px) {
+    .cartao--destaque {
+        margin-bottom: 0;
+    }
+
+    .cartao__imagem--desktop {
+        display: block;
+    }
+
+    .cartao__imagem--mobile {
+        display: none;
+    }
+
+    .cartao__botao--destaque {
+        grid-column: auto;
+        padding: 16px 8px;
+    }
+
     .cartao--recentes {
         display: grid;
         grid-template-columns: repeat(2, auto);
         align-items: center;
         row-gap: 24px;
         width: 256px;
-        padding: 16px;
+        padding: 18px;
         box-sizing: border-box;
+        align-self: flex-start;
     }
 
     .cartao--recentes .cartao__titulo {
@@ -331,7 +357,7 @@ body {
 
     .cartao__lista {
         display: grid;
-        row-gap: 16px;
+        gap: 24px;
         grid-column: span 2;
     }
 
@@ -349,6 +375,7 @@ body {
     .cartao__intem-thumbnail {
         width: 32px;
         grid-row: span 2;
+        align-self: center;
     }
 
     .cartao__item-titulo {
@@ -356,6 +383,7 @@ body {
         line-height: 1.2rem;
         font-weight: 700;
     }
+
 }
 
 
@@ -371,6 +399,16 @@ body {
     gap: 16px;
 }
 
+@media screen and (min-width: 1440px) {
+    .titulo-secao {
+        grid-column: span 4;
+    }
+
+    .secao {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
 .cartao__info--valor::before {
     content: "\e905";
     margin-right: 8px;
@@ -383,19 +421,34 @@ body {
     font-size: 24px;
 }
 
-@media screen and (min-width: 144px) {
+@media screen and (min-width: 1440px) {
 
     .titulo-pagina {
         grid-area: titulo;
     }
-    .destque-video{
+
+    .destaque-video {
         grid-area: destaque-video;
     }
-    .recentes-videos{
-        grid-area: recentes-video;
+
+    .videos-recentes {
+        grid-area: videos-recentes;
     }
-    .mais-vstos{
+
+    .mais-vistos {
         grid-area: mais-vistos;
+    }
+
+    .artes-recentes {
+        grid-area: artes-recentes;
+    }
+
+    .destaque-arte {
+        grid-area: destaque-arte;
+    }
+
+    .recentes-camisas {
+        grid-area: recentes-camisa;
     }
 
 
